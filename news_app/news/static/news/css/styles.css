@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+header {
+    background-color: #072D6B;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #072D6B;
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    background-color: #072D6B;
+    color: #437CB6;
+}
+
+main {
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.category-selection {
+    margin-bottom: 20px;
+}
+
+.category-selection h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.category-selection ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-selection li {
+    display: inline;
+}
+
+.category-selection a {
+    text-decoration: none;
+    color: #072D6B;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.category-selection a:hover {
+    background-color: #072D6B;
+}
+
+.news-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.news-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.news-content {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.news-date {
+    color: #fff;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #072D6B;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

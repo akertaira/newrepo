@@ -1,0 +1,31 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'news/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Breaking News</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Main</a></li>
+            <li><a href="{% url 'news' 'business' %}">Business</a></li>
+            <li><a href="{% url 'news' 'sports' %}">Sports</a></li>
+            <li><a href="{% url 'news' 'science' %}">Science</a></li>
+            <li><a href="{% url 'news' 'technology' %}">Technology</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Breaking News</p>
+    </footer>
+</body>
+</html>
